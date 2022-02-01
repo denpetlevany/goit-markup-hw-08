@@ -483,6 +483,8 @@ address {
 }
 
 .menu-open-btn {
+  width: 40px;
+  height: 40px;
   background-color: transparent;
   cursor: pointer;
   padding: 0;
@@ -503,8 +505,8 @@ address {
 }
 
 .burger__icon-burger {
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 16px;
 }
 
 .mob-menu-close {
@@ -760,6 +762,8 @@ address {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index-images/bg-desktop.jpg");
     max-width: 1600px;
     height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -837,6 +841,12 @@ address {
   line-height: 1.71;
   font-weight: 400;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -940,12 +950,19 @@ address {
 
 .team h2 {
   color: var(--primary-text-color);
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .team h3 {
@@ -1038,11 +1055,18 @@ address {
 .clients__header {
   color: var(--primary-text-color);
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__header {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .clients-list {
@@ -1211,6 +1235,7 @@ footer a {
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .footer__logo-adress {
     width: 30%;
+    text-align: center;
   }
 }
 
@@ -1235,6 +1260,7 @@ footer a {
             justify-content: center;
     -ms-flex-line-pack: start;
         align-content: start;
+    width: 100%;
   }
 }
 
@@ -1331,7 +1357,7 @@ footer a {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1199px) {
   .footer__logo {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1397,8 +1423,12 @@ footer a {
   }
 }
 
+.subscribe-form__field {
+  width: 100%;
+}
+
 .subscribe-form__email-form {
-  max-width: 450px;
+  width: 100%;
   height: 50px;
   font-size: 16px;
   line-height: 1.25;

@@ -18,6 +18,9 @@
     font-weight: 400;
     letter-spacing: 0.03em;
   }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
 }
 
 .features-list {
